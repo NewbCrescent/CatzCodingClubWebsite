@@ -1,0 +1,96 @@
+:root {
+    --black-color: #333;
+    --white-color: white; /* just to keep every color a variable */
+    --text-color: #696969;
+    --mint-color: #F5FFFA;
+    --yellow-color: #f7d84f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#navigation {
+    padding: 1rem 3rem;
+    background-color: var(--yellow-color);
+}
+
+.main-bar {
+    display: flex;
+    max-height: 4svh;
+}
+
+.main-bar ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    width: 100%;
+}
+
+.main-bar ul li {
+    display: grid;
+    place-items: center;
+}
+
+.main-bar ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--black-color);
+
+    /*text-align: center; could be unecessary */
+}
+
+header {
+    position: relative;
+}
+
+.hero {
+    background-image: url(Images/placeholder.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80svh;
+}
+
+.hero div:first-of-type {
+    padding: 8rem 5rem;
+}
+
+.hero div:first-of-type h1 {
+    font-size: 5em;
+    margin-bottom: 0.25em;
+}
+
+.hero div:first-of-type p {
+    font-size: 3em;
+    max-width: 23ch;
+}
+
+.bottom-wave-transition {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bottom-wave-transition svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 51px;
+    transform: rotateY(180deg);
+}
+
+.bottom-wave-transition .shape-fill {
+    fill: var(--mint-color);
+}
+
+.image-text {
+    background-color: var(--mint-color);
+    min-height: 60vh;
+}
