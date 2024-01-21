@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="header.css">
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+    <div id="navigation">
+        <nav class="main-bar">  
+          <a href="index.html"><img src="Images/logo.webp" alt="" loading="lazy"></a>
+          <!-- empty alt b/c it's the standard for decorative imgs -->
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><hr></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><hr></li>
+                <li><a href="">Meeting Details</a></li>
+            </ul> 
+        </nav>
+    </div>
+    <section>
+      <div id="entire-blob">
+            <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+    		xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      		<g transform="translate(450.5887831463434 312.5450930319445)">
+      			<path
+      				d="M151.9 -151.2C191.5 -112.2 214.8 -56.1 222.1 7.3C229.4 70.7 220.8 141.4 181.1 166.8C141.4 192.1 70.7 172 7.3 164.7C-56.1 157.4 -112.2 162.9 -156.7 137.5C-201.2 112.2 -234.1 56.1 -223.7 10.4C-213.4 -35.4 -159.7 -70.7 -115.2 -109.7C-70.7 -148.7 -35.4 -191.4 10.4 -201.7C56.1 -212.1 112.2 -190.2 151.9 -151.2"
+      				fill="#BB004B" id="blob1"></path>
+      		</g>
+          <g transform="translate(440.99906440513246 291.37314434764505)" style="visibility: hidden;"><path d="M119 -108.2C167.4 -70.7 228.7 -35.4 229 0.4C229.4 36.1 168.8 72.1 120.5 119.5C72.1 166.8 36.1 225.4 -4.6 230C-45.3 234.6 -90.5 185.2 -127 137.8C-163.5 90.5 -191.3 45.3 -204 -12.7C-216.7 -70.7 -214.4 -141.4 -177.9 -178.9C-141.4 -216.4 -70.7 -220.7 -17.7 -203C35.4 -185.4 70.7 -145.7 119 -108.2" fill="#BB004B" id="blob2"></path></g>
+      	</svg>
+      </div>
+  </section>
+  <script>
+    const tween = KUTE.fromTo("#blob1", {path: "#blob1"}, {path: "#blob2"}, {duration: 1500, yoyo: true, repeat: 9999999999999});
+    tween.start()
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+:root {
+    --black-color: #333;
+    --white-color: white; /* just to keep every color a variable */
+    --text-color: #696969;
+    --mint-color: #F5FFFA;
+    --yellow-color: #f7d84f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#navigation {
+    padding: 0.5rem 3rem;
+    background-color: var(--yellow-color);
+}
+
+.main-bar {
+    display: flex;
+    min-height: 4svh;
+}
+
+.main-bar img {
+  width: clamp(50px, 5vw, 90px); /* we need a better image btw */
+  border-radius: 8px;
+}
+
+.main-bar ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.main-bar ul li {
+    display: grid;
+    place-items: center;
+}
+
+.main-bar ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--black-color);
+
+    /*text-align: center; could be unecessary */
+}
+
+.main-bar ul li hr {
+  rotate: 90deg;
+  width: 2em;
+  height: 0.5em;
+  border-radius: 999999px;
+  background-color: var(--black-color);
+} 
