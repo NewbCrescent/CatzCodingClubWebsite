@@ -1,0 +1,52 @@
+:root {
+    --black-color: #333;
+    --white-color: white; /* just to keep every color a variable */
+    --text-color: #696969;
+    --mint-color: #F5FFFA;
+    --yellow-color: #f7d84f;
+}
+
+h1 {
+  font-size: 4em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  text-align: center;
+}
+h2{
+  font-size: 3em;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+.mission hr{
+  margin-inline: auto;
+  border: 2px solid var(--black-color);
+  border-radius: 7px;
+
+}
+
+#images {
+  padding-top: 0.25em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+#images figure {
+  margin: 0.25em;
+  padding: 0.25em;
+  border: 1px solid var(--black-color);
+  border-radius: 7px;
+  background-color: var(--mint-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#images figcaption{
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+}

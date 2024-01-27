@@ -1,10 +1,128 @@
+:root {
+    --black-color: #333;
+    --white-color: white; /* just to keep every color a variable */
+    --text-color: #696969;
+    --mint-color: #F5FFFA;
+    --yellow-color: #f7d84f;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+header {
+  position: relative;
+  background-image: url("Images/C3_group1.gif");
+  background-size: cover;
+  background-position: 50% 25%;
+  min-height: 60vh;
+  color: white;
+  overflow: hidden; /* Doing this to stop margin collapse from happening */
+}
+
+header div:first-of-type {
+  margin: 3rem 5rem;
+  padding: 1rem;
+  background-color: black;
+  border: 2px solid pink;
+  border-radius: 8px;
+  width: max-content;
+}
+
+header div h1 {
+  font-size: 3em;
+  padding-bottom: 0.25em;
+}
+
+header div p {
+  font-size: 2em;
+}
+
+#pro-div {
+  user-select: none;
+  width: 75%;
+  margin-inline: auto;  
+}
+
+.bottom-wave-transition {
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bottom-wave-transition svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 51px;
+}
+
+.bottom-wave-transition .shape-fill {
+    fill: var(--black-color);
+}
+
+path {
+  cursor: pointer;
+}
+
+#robots {
+  padding: 60px 0;
+}
+
+#robots h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#grid-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 3rem;
+}
+
+#grid-images * {
+  margin-inline: auto;
+}
+
 #entire-blob {
   display: flex;
   justify-content: center;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 8%;
+  gap: 1rem;
+}
+
+#buttons * {
+  height: fit-content;
+  border: 2px solid black;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.25rem;
+  user-select: none;
+}
+
+#buttons button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+#robots {
+  background-color: 
+  var(--black-color)
+}
+#robots h2{
+  color: var(--yellow-color);
 }

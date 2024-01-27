@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-aspect-ratio: 845/ 850) {
+
+  body header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+header {
+  background-image: url("Images/DALL·E\ 2024-01-18\ 16.00.41\ -\ A\ hero\ image\ for\ a\ school-related\ website\ focusing\ on\ technology\ and\ programming\ education\,\ specifically\ highlighting\ Python.\ The\ image\ should\ feature.png");
+  background-position: 50% 27%;
+  height: 50vh;
+  padding: 3rem 5rem;
+}
+
+header div {
+  border: 2px solid pink;
+  background-color: black;
+  border-radius: 8px;
+  width: max-content;
+  padding: 4px;
+}
+
+header div * {
+  color: white;
+}
+
+header div h1 {
+  padding-bottom: 2rem;
+}
+
+#section-img {
+  padding: 20px 0;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+}
+
+#section-img img {
+  max-width: 100%;
+  max-height: 50vh;
+}

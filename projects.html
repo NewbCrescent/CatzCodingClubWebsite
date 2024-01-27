@@ -12,17 +12,43 @@
 <body>
     <div id="navigation">
         <nav class="main-bar">  
-          <a href="index.html"><img src="Images/logo.webp" alt="" loading="lazy"></a>
+          <a href="index.html"><img src="Images/Smaller Coding Logo .png" alt="" loading="lazy"></a>
           <!-- empty alt b/c it's the standard for decorative imgs -->
             <ul>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><hr></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><hr></li>
-                <li><a href="">Meeting Details</a></li>
+                <li><a href="meeting.html">Meeting Details</a></li>
             </ul> 
         </nav>
     </div>
+    <header>
+      <div id="pro-div">
+        <h1 id="pro-title">Projects</h1>
+        <p id="pro-desc">These are some projects we've done in one week (We've been crunching this website in a week)</p>
+      </div>
+      <div class="bottom-wave-transition">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+              <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          </svg>
+      </div>
+    </header>
+    <section id="robots">
+      <div>
+        <h2>Robots</h2>
+        <div id="grid-images">
+          <video width="500" height="500" autoplay muted controls>
+            <source src="Videos/IMG_6796.mp4" type="video/mp4">
+          </video>
+          <video width="500" height="500" autoplay muted controls>
+            <source>
+          </video>
+        </div>
+      </div>
+    </section>
     <section>
       <div id="entire-blob">
             <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
@@ -34,11 +60,27 @@
       		</g>
           <g transform="translate(440.99906440513246 291.37314434764505)" style="visibility: hidden;"><path d="M119 -108.2C167.4 -70.7 228.7 -35.4 229 0.4C229.4 36.1 168.8 72.1 120.5 119.5C72.1 166.8 36.1 225.4 -4.6 230C-45.3 234.6 -90.5 185.2 -127 137.8C-163.5 90.5 -191.3 45.3 -204 -12.7C-216.7 -70.7 -214.4 -141.4 -177.9 -178.9C-141.4 -216.4 -70.7 -220.7 -17.7 -203C35.4 -185.4 70.7 -145.7 119 -108.2" fill="#BB004B" id="blob2"></path></g>
       	</svg>
+        <div id="buttons">
+          <button id="continuous">Auto: Off</button>
+          <button id="add-one">+1</button>
+          <button id="minus-one">-1</button>
+          <p id="multiplier">x1</p>
+          <form id="apply">
+            <label for="numb">x#</label>
+            <input type="number" name="numb" id="numb" value="1" min="1">
+            <button type="submit">Apply</button>
+          </form>
+        </div>
       </div>
   </section>
   <script>
-    const tween = KUTE.fromTo("#blob1", {path: "#blob1"}, {path: "#blob2"}, {duration: 1500, yoyo: true, repeat: 9999999999999});
+    const tween = KUTE.fromTo("#blob1", 
+                              {path: "#blob1"}, 
+                              {path: "#blob2"},
+                              {duration: 1500, yoyo: true, repeat: 9999999999999});
     tween.start()
   </script>
+  <script src="blob.js"></script>
+  <script src="pro.js"></script>
 </body>
 </html>

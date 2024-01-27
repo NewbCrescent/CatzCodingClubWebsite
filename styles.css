@@ -18,7 +18,7 @@ header {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255, 0.4)), url(Images/schoolimg.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255, 0.3)), url(Images/schoolimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 40%;
